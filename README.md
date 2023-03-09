@@ -5,7 +5,7 @@ Euskal efemerideen kontsulta
 ## Honi buruz
 Euskal efemerideak kontsultatzeko MyCroft *skill* bat.
 
-[GaurkoanZer](https://gaurkoanzer.eus) atarian euskal efemerideak biltzen ditu. *Skill* honen bitartez bertako efemerideak kontsultatu daitezke.
+[Gaurkoan Zer?](https://gaurkoanzer.eus) atarian euskal efemerideak biltzen ditu. *Skill* honen bitartez bertako efemerideak kontsultatu daitezke.
 
 **Efemeride kontsultak**
 
@@ -32,6 +32,12 @@ Une honetan *skill* honek onartzen dituen agindu zerrenda:
   * Asteko efemerideak
   * Aste honetan zer?
   * Aste honetako efemerideak
+* Jaiotzak
+  * Gaurko jaiotzak
+  * Jaiotzak
+* Pertsonaiak
+  * Gaurko pertsonaia
+  * Pertsonaia
 * Informazio gehiago eskuratu
   * informazio gehiago
   * sakondu gehiago
