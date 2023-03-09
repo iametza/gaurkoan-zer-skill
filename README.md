@@ -19,7 +19,7 @@ Efemerideekin egindako moduan, eguneko/asteko jaiotzak kontsultatu daitezke.
 
 **Pertsonaia**
 
-Gaurko pertsonaia itzuliko liguke, bere jaiotza delako edo berarekin lotutako efemerideren bat dagoelako.
+Gaurko pertsonaia(k) itzuliko liguke, bere jaiotza delako edo berarekin lotutako efemerideren bat dagoelako. Pertsonaia bakoitzeko bere izen, jaiotza egun eta jaioterriaz aparte biografia labur bat ematen da.
 
 ## Aginduak
 
