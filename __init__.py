@@ -38,9 +38,9 @@ class GaurkoanZer(MycroftSkill):
                 egutegia = Egutegia(efemeridea['data'])
                 self.speak(egutegia.getProcessed() + ' ' + efemeridea['azalpena'])
 
-    def get_efemerideak(self, tartea):
+    def get_efemerideak(self, tartea, mota = 0):
         self.tartea = tartea
-        self.efemerideak = self.api.getEfemerideak(self.tartea)
+        self.efemerideak = self.api.getEfemerideak(self.tartea, mota)
         return self.efemerideak
 
     def get_efemerideak_mota(self, mota):
@@ -83,7 +83,7 @@ class GaurkoanZer(MycroftSkill):
     @intent_file_handler('jaiotzak.intent')
 
     def handle_jaiotzak(self, message):
-        self.get_efemerideak_mota(2) # 2: Jaiotzak mota, 'hardcoded', sorry ^^
+        self.get_efemerideak('gaurkoak', 2) # 2: Jaiotzak mota, 'hardcoded', sorry ^^
         self.print_efemerideak('Gaur %d jaiotza aurkitu ditut')
 
     def stop(self):
@@ -101,9 +101,12 @@ class Api:
         self.method = 'efemerideak'
         return self.doCall('/' + str(id))
     
-    def getEfemerideak(self, tartea = 'gaurkoak'):
+    def getEfemerideak(self, tartea = 'gaurkoak', mota = 0):
         self.method = 'efemerideak'
-        return self.doCall('?tartea=' + tartea)
+        filtroak = '?tartea=' + tartea
+        if mota != 0:
+            filtroak = filtroak + '&mota_id=' + str(mota)
+        return self.doCall(filtroak)
 
     def getPertsonaia(self, id = 0):
         self.method = 'pertsonaiak'
